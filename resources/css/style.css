@@ -35,7 +35,7 @@ a {
     height: 30rem;
     padding-top: 1rem;
     background-image: url("../img/glasses-bg.png");
-    background-position: left;
+    background-position: center;
     background-size: cover;
 }
 
@@ -73,6 +73,10 @@ a {
 /* Navigation Styling */
 nav ul {
     list-style: none;
+}
+
+.mobileNav {
+    display: none;
 }
 
 /* Nav Item Spacing */
@@ -178,6 +182,7 @@ footer img {
 
     #headerLayer {
         padding-top: 0;
+        height: 22rem;
     }
 
     .header {
@@ -188,5 +193,123 @@ footer img {
         width: 100%;
     }
 
-    
+    .motto {
+        margin-top: 5rem;
+    }
+
+    .motto div {
+        margin-right: 2rem;
+    }
+
+    .motto div span {
+        font-size: 1.33rem;
+        padding: 0.75rem 4rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* -------------------------------------------------------- */
+    /* Navigation Bar */
+
+    #headerLayer {
+        height: 17rem;
+        background-position: 20%;
+    }
+
+    /* Hiding Desktop Nav */
+    .desktopNav {
+        display: none;
+    }
+
+    /* Showing Mobile Nav */
+    .mobileNav {
+        display: initial;
+    }
+
+    /* Hiding Brand Name */
+    .logo span {
+        display: none;
+    }
+
+    /* -------------------------------------------------------- */
+    /* Motto */
+
+    /* Extending The Motto to 100% Width */
+    .container.motto {
+        width: 100%;
+    }
+
+    /* Spacing the motto from the top */
+    .motto {
+        margin-top: 9rem;
+        justify-content: center;
+    }
+
+    /* Centering the motto */
+    .motto div {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Changing the motto padding and width */
+    .motto div span {
+        padding: 1rem 0;
+        display: block;
+        width: 100%;
+    }
+
+    /* -------------------------------------------------------- */
+    /* Thumbnails */
+    .supports {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 3rem;
+    }
+
+    .thumbnail {
+        height: auto;
+        margin: 0.77rem;
+        font-size: 0.77rem;
+    }
+
+    /* -------------------------------------------------------- */
+    /* Philosophy */
+
+    .info {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2.5rem;
+    }
+
+    .info h2 {
+        text-align: center;
+        width: 100%;
+        padding: 0.6rem 0;
+    }
+
+    .info p {
+        font-size: 0.77rem;
+        margin: 1rem 0 0 1rem;
+        text-align: left;
+    }
+
+    /* -------------------------------------------------------- */
+    /* Philosophy */
+
+    footer {
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer div {
+        display: none;
+    }
+
+    footer img {
+        padding: 4rem 0;
+    }
 }
